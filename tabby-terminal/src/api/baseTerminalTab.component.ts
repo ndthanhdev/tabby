@@ -252,7 +252,7 @@ export class BaseTerminalTabComponent extends BaseTabComponent implements OnInit
                     break
                 case 'delete-previous-word':
                     this.forEachFocusedTerminalPane(tab => {
-                        tab.sendInput('\x1b\x7f')
+                        tab.sendInput('\u0017')
                     })
                     break
                 case 'delete-next-word':
@@ -639,7 +639,8 @@ export class BaseTerminalTabComponent extends BaseTabComponent implements OnInit
                     if (this.config.store.terminal.pasteOnMiddleClick) {
                         this.paste()
                     }
-                    event.preventDefault()
+                    event.
+                    entDefault()
                     event.stopPropagation()
                     return
                 }
