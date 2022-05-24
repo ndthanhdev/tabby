@@ -252,7 +252,6 @@ export class BaseTerminalTabComponent extends BaseTabComponent implements OnInit
                     break
                 case 'delete-previous-word':
                     this.forEachFocusedTerminalPane(tab => {
-                        console.log('okokokok')
                         tab.sendInput('\u0017')
                     })
                     break
